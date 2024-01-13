@@ -660,6 +660,12 @@ body {
 }
 
 .footer-subscribe-input {
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 2;
+	letter-spacing: 0.04em;
+	text-align: left;
 	width: 264px;
 	height: 40px;
 	border-radius: 4px;
@@ -681,6 +687,7 @@ body {
 }
 
 .footer-subscribe-text {
+	font-family: inherit;
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 1.5;
