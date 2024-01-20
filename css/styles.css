@@ -650,6 +650,10 @@ nav {
   margin-bottom: 16px;
 }
 
+.footer-subscribe {
+  display: flex;
+  gap: 24px;
+}
 .footer-subscribe-box {
   display: flex;
   flex-direction: column;
