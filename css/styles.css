@@ -424,14 +424,17 @@ nav {
 
 .team-box-link:hover {
   background-color: #404bbf;
+  border: none;
 }
 
 .team-box-link:active {
   background-color: #404bbf;
+  border: none;
 }
 
 .team-box-link:focus {
   background-color: #404bbf;
+  border: none;
 }
 
 .team-box-img {
