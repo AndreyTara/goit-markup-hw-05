@@ -90,7 +90,13 @@
       <section class="hero">
         <div class="hero-container container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <button
+            class="hero-button btn-fill"
+            type="button"
+            onclick="document.querySelector('.backdrop').classList.add('is-open')"
+          >
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -504,9 +510,26 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <p class="footer-subscribe-title">Subscribe</p>
+          <div class="footer-subscribe-box">
+            <input
+              class="footer-subscribe-input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
+            <div class="footer-subscribe-btn btn-fill" type="button">
+              <p class="footer-subscribe-text">Subscribe</p>
+              <svg class="footer-subscribe-icon">
+                <use href="./images/icons.svg#icon-telegram"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button
           class="modal-close-btn"
@@ -567,27 +590,37 @@
             <li class="modal-field">
               <label class="modal-label" for="user-comment">Comment</label>
               <textarea
-                class="modal-text"
+                class="modal-comment"
                 name="user-comment"
                 id="user-comment"
                 placeholder="Enter text"
               ></textarea>
             </li>
-            <li class="modal-field">
-              <input
-                class="modal-policy"
-                type="checkbox"
-                name="polisy"
-                id="policy"
-                value=""
-              />
-              <label class="modal-policy-label modal-label" for="policy">
-                <span> </span> I accept the terms and conditions of the
-                <span> Privacy Policy</span>
-              </label>
-            </li>
           </ul>
-          <button class="modal-submit" type="submit">Send</button>
+          <div class="modal-policy modal-check">
+            <input
+              class="modal-policy-input visually-hidden"
+              type="checkbox"
+              name="policy"
+              id="policy"
+              value="true"
+            />
+            <label class="modal-policy-label" for="policy">
+              <span
+                ><svg class="modal-policy-icon" width="10" height="10">
+                  <use
+                    href="./images/icons.svg#icon-check-click"
+                  ></use></svg></span
+              >I accept the terms and conditions of the &#160;<a
+                class="modal-check-text"
+                href=""
+                >privacy policy</a
+              >
+            </label>
+          </div>
+          <div class="modal-box-submit">
+            <button class="modal-submit btn-fill" type="submit">Send</button>
+          </div>
         </form>
       </div>
     </div>
