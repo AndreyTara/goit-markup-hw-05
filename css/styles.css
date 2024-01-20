@@ -819,6 +819,7 @@ nav {
   transform: translateY(-50%);
   left: 16px;
   fill: #2e2f42;
+  margin-left: 16px;
 }
 
 .modal-comment {
