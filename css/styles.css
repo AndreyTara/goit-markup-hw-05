@@ -7,7 +7,7 @@
 p,
 h1,
 h2,
-h3,
+footer-form h3,
 h4,
 h5,
 h6 {
@@ -631,6 +631,10 @@ nav {
   background-color: #31d0aa;
 }
 
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
 .footer-subscribe {
   display: flex;
   /* flex-direction: column; */
@@ -650,7 +654,8 @@ nav {
   display: flex;
   flex-direction: column;
 }
-
+.footer-subscribe-label {
+}
 .footer-subscribe-input {
   font-size: 12px;
   font-weight: 400;
