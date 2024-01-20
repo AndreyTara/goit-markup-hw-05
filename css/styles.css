@@ -796,12 +796,15 @@ nav {
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
+
 .modal-policy {
   margin-top: 8px;
 }
+
 .modal-form-box {
   position: relative;
 }
+
 .modal-input {
   width: 100%;
   height: 40px;
@@ -854,10 +857,7 @@ nav {
   border-color: #4d5ae5;
   color: #404040;
 }
-.modal-policy {
-  margin-top: 16px;
-  margin-bottom: 24px;
-}
+
 .modal-policy-input:checked + .modal-policy-label span {
   background-color: #404bbf;
   border: none;
