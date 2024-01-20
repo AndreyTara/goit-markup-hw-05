@@ -632,6 +632,7 @@ nav {
 .footer-form {
   display: flex;
   flex-direction: column;
+  gap: 24px;
 }
 
 .footer-form-title {
@@ -713,7 +714,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
+  /* right: 0; */
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
