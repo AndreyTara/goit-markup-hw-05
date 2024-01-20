@@ -511,20 +511,23 @@
           </ul>
         </div>
         <div class="footer-subscribe">
-          <p class="footer-subscribe-title">Subscribe</p>
+          <label for="footer-email" class="footer-subscribe-title"
+            >Subscribe</label
+          >
           <div class="footer-subscribe-box">
             <input
               class="footer-subscribe-input"
               type="email"
-              name="email"
+              name="footer-email"
               placeholder="E-mail"
+              id="footer-email"
             />
-            <div class="footer-subscribe-btn btn-fill" type="button">
+            <button class="footer-subscribe-btn btn-fill" type="submit">
               <p class="footer-subscribe-text">Subscribe</p>
-              <svg class="footer-subscribe-icon">
+              <svg class="footer-subscribe-icon" width="24" height="">
                 <use href="./images/icons.svg#icon-telegram"></use>
               </svg>
-            </div>
+            </button>
           </div>
         </div>
       </div>

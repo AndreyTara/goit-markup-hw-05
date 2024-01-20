@@ -45,7 +45,6 @@ address {
 
 button {
   border-style: none;
-  border: none;
 }
 
 body {
@@ -655,7 +654,6 @@ nav {
 }
 
 .footer-subscribe-input {
-  font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 2;
@@ -669,15 +667,24 @@ nav {
   padding: 8px 16px;
   color: #ffffff;
   background-color: inherit;
+  outline: transparent;
 }
-
+.footer-subscribe-input:focus {
+  border: 1px solid #4d5ae5;
+}
+.footer-subscribe-input:active {
+  border: 1px solid #4d5ae5;
+}
 .footer-subscribe-btn {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 165px;
   height: 40px;
   padding: 8px 24px 8px 24px;
   border-radius: 4px;
   gap: 16px;
+  /* outline: transparent; */
 }
 
 .footer-subscribe-text {
@@ -688,11 +695,9 @@ nav {
   letter-spacing: 0.02em;
   text-align: left;
   color: #ffffff;
-  margin-bottom: 16px;
 }
 
 .footer-subscribe-icon {
-  display: inline-block;
   fill: #ffffff;
 }
 
