@@ -717,21 +717,42 @@ nav {
   visibility: visible;
   pointer-events: auto;
 }
+body {
+  --mod-height: 600px;
+  --mod-width: 408px;
+}
 
 .modal {
-  width: 408px;
-  flex-shrink: 0;
+  /* width: 408px; */
+  /* flexshrink: 0; */
+  /* border: 10px solid red; */
+
   border-radius: 4px;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   /* top: 10px; */
-  position: relative;
+  /* position: relative; */
   /* margin: 0 auto; */
   padding: 76px 28px 28px 20px;
-  top: 50%;
+  /* top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+  position: fixed;
+  top: max(0px, calc(50% - var(--mod-height) / 2));
+  bottom: max(0px, calc(50% - var(--mod-height) / 2));
+  left: max(0px, calc(50% - var(--mod-width) / 2));
+  right: max(0px, calc(50% - var(--mod-width) / 2));
+  overflow: auto;
+}
+.modal-serios {
+  position: fixed;
+  --mod-height: 400px;
+  --mod-width: 200px;
+  top: calc(50% - var(--mod-height) / 2);
+  bottom: calc(50% - var(--mod-height) / 2);
+  left: calc(50% - var(--mod-width) / 2);
+  right: calc(50% - var(--mod-width) / 2);
 }
 
 .modal-close-btn {
@@ -820,7 +841,8 @@ nav {
 
 .modal-comment {
   color: #2e2f42;
-  width: 360px;
+  width: 100%;
+  /* width: 360px; */
   height: 120px;
   flex-shrink: 0;
   border-radius: 4px;
