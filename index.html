@@ -93,7 +93,7 @@
           <button
             class="hero-button btn-fill"
             type="button"
-            onclick="document.querySelector('.modal-container').classList.add('is-open')"
+            onclick="document.querySelector('.backdrop').classList.add('is-open')"
           >
             Order Service
           </button>
@@ -533,11 +533,10 @@
       </div>
     </footer>
     <div class="backdrop is-active">
-      <!-- <div class="backdrop"></div> -->
       <div class="modal">
         <button
           class="modal-close-btn"
-          onclick="document.querySelector('.modal-container').classList.remove('is-open')"
+          onclick="document.querySelector('.backdrop').classList.remove('is-open')"
         >
           <svg width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
