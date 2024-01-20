@@ -796,6 +796,9 @@ nav {
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
+.modal-policy {
+  margin-top: 8px;
+}
 .modal-form-box {
   position: relative;
 }
