@@ -633,7 +633,7 @@ nav {
 
 .footer-subscribe {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 
 .footer-subscribe-title {
@@ -648,6 +648,7 @@ nav {
 
 .footer-subscribe-box {
   display: flex;
+  flex-direction: column;
 }
 
 .footer-subscribe-input {
@@ -673,6 +674,7 @@ nav {
   border: 1px solid #4d5ae5;
 }
 .footer-subscribe-btn {
+  margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
