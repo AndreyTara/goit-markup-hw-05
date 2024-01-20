@@ -536,12 +536,10 @@ nav {
 .portfolio-subtitle {
   margin-bottom: 8px;
   text-align: left;
-  /*14-01-2024 из #3checkTeacher#4checkTeacher*/
 }
 
 .portfolio-text {
   text-align: left;
-  /*14-01-2024 из #3checkTeacher#4checkTeacher*/
 }
 
 .footer {
@@ -558,7 +556,6 @@ nav {
 }
 
 .footer-content {
-  /* margin-right: 120px; */
   padding-right: 40px;
 }
 
@@ -566,7 +563,6 @@ nav {
   display: inline-block;
   color: #4d5ae5;
   line-height: 1.17;
-  margin-bottom: 16px;
 }
 
 .footer-logo-white {
@@ -583,7 +579,6 @@ nav {
 }
 
 .footer-soc {
-  /* margin-right: 80px; */
 }
 
 .footer-soc-title {
@@ -593,6 +588,9 @@ nav {
   letter-spacing: 0.02em;
   text-align: left;
   color: #ffffff;
+}
+
+.footer-title {
   margin-bottom: 16px;
 }
 
@@ -633,7 +631,7 @@ nav {
 
 .footer-form {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
 }
 
 .footer-form-title {
@@ -648,7 +646,7 @@ nav {
 
 .footer-form-box {
   display: flex;
-  gap: 24px;
+  /* gap: 24px; */
 }
 
 .footer-form-label {
@@ -661,7 +659,6 @@ nav {
   text-align: left;
   width: 264px;
   height: 40px;
-  margin-right: 24px;
   padding: 8px 16px;
   color: #ffffff;
   background-color: inherit;
@@ -669,6 +666,7 @@ nav {
   border-radius: 4px;
   border: 1px solid #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  margin-right: 24px;
 }
 .footer-form-input:focus {
   border: 1px solid #4d5ae5;
@@ -677,7 +675,6 @@ nav {
   border: 1px solid #4d5ae5;
 }
 .footer-form-btn {
-  margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -697,9 +694,15 @@ nav {
 
 .footer-form-icon {
   fill: #ffffff;
-  margin-left: 16px;
 }
 
+.modal-container {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .backdrop {
   position: fixed;
   width: 100%;
@@ -708,9 +711,6 @@ nav {
   left: 0;
   right: 0;
   background-color: rgba(30, 24, 35, 0.615);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
 }
 
 .is-open {
@@ -746,7 +746,8 @@ body {
   right: max(0px, calc(50% - var(--mod-width) / 2));
   overflow: auto;
 }
-.modal-serios {
+
+/* .modal-serios {
   position: fixed;
   --mod-height: 400px;
   --mod-width: 200px;
@@ -754,7 +755,7 @@ body {
   bottom: calc(50% - var(--mod-height) / 2);
   left: calc(50% - var(--mod-width) / 2);
   right: calc(50% - var(--mod-width) / 2);
-}
+} */
 
 .modal-close-btn {
   margin-left: auto;

@@ -93,7 +93,7 @@
           <button
             class="hero-button btn-fill"
             type="button"
-            onclick="document.querySelector('.backdrop').classList.add('is-open')"
+            onclick="document.querySelector('.modal-container').classList.add('is-open')"
           >
             Order Service
           </button>
@@ -469,7 +469,7 @@
     <footer class="footer">
       <div class="footer-container container">
         <div class="footer-content">
-          <a class="footer-content-logo logo" href="./index.html">
+          <a class="footer-content-logo logo footer-title" href="./index.html">
             Web<span class="footer-logo-white">Studio</span></a
           >
           <p class="footer-content-text">
@@ -478,7 +478,7 @@
           </p>
         </div>
         <div class="footer-soc">
-          <p class="footer-soc-title">Social media</p>
+          <p class="footer-soc-title footer-title">Social media</p>
           <ul class="footer-box">
             <li class="footer-box-item">
               <a class="footer-box-link" href="">
@@ -511,7 +511,7 @@
           </ul>
         </div>
         <div class="footer-form">
-          <p class="footer-form-title title">Subscribe</p>
+          <p class="footer-form-title footer-title">Subscribe</p>
           <form class="footer-form-box">
             <label class="footer-form-label text">
               <input
@@ -532,12 +532,12 @@
         </div>
       </div>
     </footer>
-    <div class="modal-container">
+    <div class="modal-container is-active">
       <div class="backdrop"></div>
       <div class="modal">
         <button
           class="modal-close-btn"
-          onclick="document.querySelector('.backdrop').classList.remove('is-open')"
+          onclick="document.querySelector('.modal-container').classList.remove('is-open')"
         >
           <svg width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
