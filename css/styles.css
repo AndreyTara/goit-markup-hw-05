@@ -296,19 +296,23 @@ nav {
   color: #ffffff;
   background-color: #4d5ae5;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-fill:hover {
   background-color: #404bbf;
+  border: none;
 }
 
 .btn-fill:focus {
   background-color: #404bbf;
+  border: none;
 }
 
 .btn-fill:active {
   background-color: #404bbf;
+  border: none;
 }
 
 .skills {
@@ -719,16 +723,20 @@ nav {
   --mod-height: 590px;
   --mod-width: 408px;
   border-radius: 4px;
+  /* top: max(0px, calc(50% - var(--mod-height) / 2));
+  bottom: max(0px, calc(50% - var(--mod-height) / 2));
+  left: max(0px, calc(50% - var(--mod-width) / 2));
+  right: max(0px, calc(50% - var(--mod-width) / 2)); */
   background: #fcfcfc;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   position: absolute;
-  top: max(0px, calc(50% - var(--mod-height) / 2));
-  bottom: max(0px, calc(50% - var(--mod-height) / 2));
-  left: max(0px, calc(50% - var(--mod-width) / 2));
-  right: max(0px, calc(50% - var(--mod-width) / 2));
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
   overflow: auto;
   padding: 72px 24px 24px 24px;
+  min-height: 584px;
 }
 
 .modal-close-btn {
@@ -896,6 +904,8 @@ nav {
   justify-content: center;
 }
 .modal-submit {
+  padding: 0;
+  cursor: pointer;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   width: 169px;
