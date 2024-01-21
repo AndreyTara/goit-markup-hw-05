@@ -738,11 +738,12 @@ nav {
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: auto;
+  padding: 72px 24px 24px 24px;
 }
-.modal-container {
+/* .modal-container {
   padding: 72px 24px 24px 24px;
   position: relative;
-}
+} */
 .modal-close-btn {
   position: absolute;
   top: 24px;
