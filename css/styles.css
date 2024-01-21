@@ -904,12 +904,12 @@ nav {
   fill: transparent;
 }
 
-.modal-privacy-input:checked + .modal-privacy-item {
+.modal-privacy-input:checked + .modal-privacy-label span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
 }
-.modal-privacy-input:focus + .modal-privacy-item {
+.modal-privacy-input:focus + .modal-privacy-label span {
   border-color: #4d5ae5;
 }
 
