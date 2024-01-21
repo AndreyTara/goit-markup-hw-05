@@ -701,7 +701,7 @@ nav {
 /* _____________backdrop____________*/
 
 .backdrop {
-  width: 100%;
+  width: inherit;
   height: 100%;
   position: fixed;
   top: 0;
