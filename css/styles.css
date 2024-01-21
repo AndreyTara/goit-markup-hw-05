@@ -907,7 +907,7 @@ nav {
   justify-content: center;
   fill: transparent;
 }
-.modal-privacy-label span {
+/* .modal-privacy-label span {
   /* width: 16px;
   height: 16px;
   border: 1px solid #2e2f4266;
@@ -920,7 +920,7 @@ nav {
   align-items: center;
   justify-content: center;
   fill: transparent; */
-}
+} */
 .modal-privacy-input:checked + .modal-privacy-label span {
   background-color: #404bbf;
   border: none;
