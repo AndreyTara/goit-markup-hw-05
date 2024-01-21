@@ -795,20 +795,25 @@ nav {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 16px;
-  /* font-style: normal; */
 }
 
 .modal-form {
   display: flex;
   flex-direction: column;
-  /* gap: 24px; */
 }
 
 .modal-form-field {
   margin-bottom: 8px;
   position: relative;
 }
-
+.modal-form-field.comment {
+  margin-bottom: 16px;
+  position: relative;
+}
+.modal-form-field.checkbox {
+  margin-bottom: 24px;
+  position: relative;
+}
 .modal-form-label {
   font-size: 12px;
   line-height: 1.17;
