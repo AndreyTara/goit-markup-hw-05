@@ -740,10 +740,7 @@ nav {
   overflow: auto;
   padding: 72px 24px 24px 24px;
 }
-/* .modal-container {
-  padding: 72px 24px 24px 24px;
-  position: relative;
-} */
+
 .modal-close-btn {
   position: absolute;
   top: 24px;
