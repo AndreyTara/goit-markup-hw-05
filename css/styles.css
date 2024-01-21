@@ -741,9 +741,9 @@ nav {
 }
 .modal-container {
   padding: 72px 24px 24px 24px;
+  position: relative;
 }
 .modal-close-btn {
-  /* margin-left: auto; */
   position: absolute;
   top: 24px;
   right: 24px;
