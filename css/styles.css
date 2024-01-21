@@ -881,6 +881,15 @@ nav {
   color: #404040;
 }
 
+.modal-privacy-input:checked + .modal-privacy-label span {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+.modal-privacy-input:focus + .modal-privacy-label span {
+  border-color: #4d5ae5;
+}
+
 .modal-privacy-label {
   font-size: 12px;
   line-height: 1.17;
@@ -903,14 +912,7 @@ nav {
   justify-content: center;
   fill: transparent;
 }
-
-.modal-privacy-input:checked + .modal-privacy-label span {
-  background-color: #404bbf;
-  border: none;
-  fill: #f4f4fd;
-}
-.modal-privacy-input:focus + .modal-privacy-label span {
-  border-color: #4d5ae5;
+.modal-privacy-icon {
 }
 
 .modal-privacy-text {
