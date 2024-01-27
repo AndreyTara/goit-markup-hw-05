@@ -2,6 +2,7 @@
 *:before,
 *:after {
   box-sizing: border-box;
+ 
 }
 
 p,
@@ -13,6 +14,7 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 0;
+ 
 }
 
 ul {
@@ -67,6 +69,7 @@ nav {
   color: inherit;
   /* background-color: inherit; */
 }
+
 
 .section {
   padding: 120px 0;
