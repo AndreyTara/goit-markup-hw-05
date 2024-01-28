@@ -52,9 +52,6 @@ button {
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
-  /* max-width: 1440px;
-  width: 100%; */
-  /* margin: 0 auto; */
 }
 
 nav {
@@ -62,15 +59,17 @@ nav {
 }
 
 .container {
-  max-width: 1158px;
-  padding: 0 15px;
+  /* max-width: 1158px; */
+  max-width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
   color: inherit;
   /* background-color: inherit; */
+  border: 1px dotted red;
 }
 
 .section {
-  padding: 120px 0;
   margin: 0 auto;
 }
 
@@ -98,11 +97,12 @@ nav {
 }
 
 .title {
+  color: #2e2f42;
   font-size: 36px;
   font-weight: 700;
+  font-style: normal;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  color: #2e2f42;
   margin-bottom: 72px;
   text-align: center;
   text-transform: capitalize;
@@ -121,17 +121,14 @@ nav {
 .text {
   font-size: 16px;
   font-weight: 400;
+  font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
   text-align: center;
   text-transform: capitalize;
 }
-.wrapper {
-  max-width: 1440px;
-  /* width: 100%; */
-  margin: 0 auto;
-}
+
 .header {
   color: #2e2f42;
   border-bottom: 1px solid #e7e9fc;
@@ -481,6 +478,8 @@ nav {
 }
 
 .skills {
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .skills-container {
@@ -504,7 +503,8 @@ nav {
 .skills-list {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  /* gap: 24px; */
+  gap: 72px;
 }
 
 .skills-item {
@@ -512,14 +512,17 @@ nav {
   /* width: calc((100% - 3 * 24px) / 4); */
   width: 100%;
 }
-
+.skills-box {
+  display: none;
+}
 .skills-subtitle {
+  font-size: 36px;
   text-align: left;
-  margin-bottom: 8px;
   text-transform: none;
 }
 
 .skills-text {
+  padding-top: 8px;
   text-align: left;
   text-transform: none;
   font-weight: 500;
@@ -1096,5 +1099,36 @@ nav {
   padding: 16px 32px;
 }
 
-@madia (min-width:) {
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 736px;
+  }
+
+  .skills-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  .skills-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    min-width: 1166px;
+  }
+
+  .skills-list {
+    gap: 24px;
+  }
+
+  .skills-item {
+    width: calc((100% - 3 * 24px) / 4);
+    /* width: 100%; */
+  }
+  .skills-box {
+    display: flex;
+  }
 }
