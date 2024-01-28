@@ -727,8 +727,8 @@ nav {
 
 .portfolio-subtitle {
   font-weight: 500;
-  margin-bottom: 8px;
   text-align: left;
+  margin-bottom: 8px;
 }
 
 .portfolio-text {
@@ -743,13 +743,17 @@ nav {
   padding-top: 100px;
   padding-bottom: 100px;
   display: flex;
-  align-items: baseline;
-  column-gap: 80px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  gap: 72px;
 }
 
 .footer-content {
-  padding-right: 40px;
+  /* padding-right: 40px; */
+  min-width: 264px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-content-logo {
@@ -772,6 +776,9 @@ nav {
 }
 
 .footer-soc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-soc-title {
@@ -823,6 +830,9 @@ nav {
 }
 
 .footer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-form-title {
@@ -832,12 +842,14 @@ nav {
   letter-spacing: 0.02em;
   text-align: left;
   color: #ffffff;
-  margin-bottom: 16px;
 }
 
 .footer-form-box {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  /* gap: 24px; */
 }
 
 .footer-form-label {
@@ -1200,6 +1212,20 @@ nav {
     height: 300px;
   }
 
+  .footer-container {
+    flex-direction: row;
+    align-items: unset;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+  .footer-form {
+    align-items: unset;
+  }
+  .footer-form-box {
+    flex-direction: row;
+    gap: 24px;
+  }
   .modal {
     min-width: 408px;
     min-height: 584px;
@@ -1270,6 +1296,14 @@ nav {
   }
   .portfolio-item {
     width: calc((100% - 2 * 24px) / 3);
+  }
+  .footer-content {
+    padding-right: 40px;
+  }
+  .footer-container {
+    align-items: baseline;
+    column-gap: 80px;
+    flex-wrap: wrap;
   }
   .modal {
     min-width: 408px;
