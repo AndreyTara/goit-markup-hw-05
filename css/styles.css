@@ -44,7 +44,7 @@ address {
 }
 
 button {
-  border-style: none;
+  border: none;
   margin: 0;
   padding: 0;
 }
@@ -66,10 +66,12 @@ nav {
   margin: 0 auto;
   color: inherit;
   /* background-color: inherit; */
-  border: 1px dotted red;
+  /* border: 1px dotted red; */
 }
 
 .section {
+  padding-top: 96px;
+  padding-bottom: 96px;
   margin: 0 auto;
 }
 
@@ -103,14 +105,13 @@ nav {
   font-style: normal;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  margin-bottom: 72px;
   text-align: center;
   text-transform: capitalize;
 }
 
 .subtitle {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
@@ -119,12 +120,12 @@ nav {
 }
 
 .text {
+  color: #434455;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
   text-align: center;
   text-transform: capitalize;
 }
@@ -417,37 +418,57 @@ nav {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-people-office.jpg);
+    url(../images/hero-office-mob-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
 
+  margin: 0 auto;
+}
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-office-mob-2x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+  }
+}
 .hero-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  /* padding-top: 188px;
+  padding-bottom: 188px; */
+  padding: 72px 52px;
 }
 
 .hero-title {
-  font-size: 56px;
+  font-size: 36px;
+  font-style: normal;
   font-weight: 700;
-  line-height: 1.07;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
   max-width: 496px;
   width: 100%;
-  margin-bottom: 48px;
+  padding-bottom: 72px;
+  text-transform: capitalize;
+  max-width: 216px;
 }
 
 .hero-button {
   display: block;
   min-width: 169px;
-  padding: 16px 32px 16px 32px;
+  padding: 16px 32px;
   border-radius: 4px;
   margin: 0 auto;
 }
@@ -455,12 +476,12 @@ nav {
 .btn-fill {
   font-family: inherit;
   font-size: 16px;
+  font-style: normal;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
-  border: none;
   background-color: #4d5ae5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -478,8 +499,6 @@ nav {
 }
 
 .skills {
-  padding-top: 96px;
-  padding-bottom: 96px;
 }
 
 .skills-container {
@@ -503,7 +522,6 @@ nav {
 .skills-list {
   display: flex;
   flex-direction: column;
-  /* gap: 24px; */
   gap: 72px;
 }
 
@@ -536,11 +554,11 @@ nav {
 }
 
 .team-list {
+  padding-top: 72px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 72px;
 }
 
 .team-item {
@@ -559,17 +577,17 @@ nav {
 }
 
 .team-subtitle {
-  margin-bottom: 8px;
   text-align: center;
   color: #2e2f42;
 }
 
 .team-text {
+  padding-top: 8px;
   text-align: center;
-  margin-bottom: 8px;
 }
 
 .team-box-list {
+  padding-top: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -616,12 +634,10 @@ nav {
 }
 
 .portfolio-list {
+  padding-top: 72px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  row-gap: 48px;
-  column-gap: 24px;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .portfolio-item {
@@ -654,6 +670,8 @@ nav {
 }
 
 .portfolio-box-img {
+  width: 100%;
+  height: 260px;
 }
 
 .portfolio-box-overlay {
@@ -1101,9 +1119,42 @@ nav {
 
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 736px;
+    min-width: 737px;
   }
 
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-office-tab-1x.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-office-tab-2x.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin: 0 auto;
+    }
+  }
+  .hero-container {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+  .hero-title {
+    text-transform: unset;
+    font-size: 56px;
+    line-height: 1.07;
+    padding-bottom: 36px;
+    min-width: 496px;
+  }
   .skills-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1113,11 +1164,69 @@ nav {
   .skills-item {
     width: calc((100% - 24px) / 2);
   }
+
+  .team-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px 24px;
+  }
+
+  .portfolio-list {
+    padding-top: 72px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  .portfolio-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .portfolio-box-img {
+    height: 300px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
   .container {
-    min-width: 1166px;
+    min-width: 1158px;
+  }
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-office-desc-1x.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-office-desc-2x.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin: 0 auto;
+    }
+  }
+  .hero-container {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+  .hero-title {
+    padding-bottom: 48px;
+    letter-spacing: 1.12px;
   }
 
   .skills-list {
@@ -1126,9 +1235,18 @@ nav {
 
   .skills-item {
     width: calc((100% - 3 * 24px) / 4);
-    /* width: 100%; */
   }
+
   .skills-box {
     display: flex;
+  }
+  .team-list {
+    flex-wrap: nowrap;
+  }
+  .portfolio-list {
+    padding-top: 120px;
+  }
+  .portfolio-item {
+    width: calc((100% - 2 * 24px) / 3);
   }
 }
